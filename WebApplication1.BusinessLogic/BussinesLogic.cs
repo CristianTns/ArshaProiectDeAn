@@ -10,7 +10,7 @@ namespace WebApplication1.BusinessLogic
 {
     public class BussinesLogic
     {
-        public ISession GetSession()
+        public ISession GetSessionBL()
         {
             return new SessionBL();
         }

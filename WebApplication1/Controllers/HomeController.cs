@@ -39,50 +39,6 @@ namespace WebApplication1.Controllers
 
 
     }
-    public class RegisterController : Controller
-    {
-        private readonly ISession _session;
-        public RegisterController()
-        {
-            var bl = new BussinessLogic();
-            _session = bl.GetSessionBL();
-        }
 
-        public ActionResult LogIn()
-        {
-            return View();
-        }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-
-        public ActionResult LogIn(UserLogin login)
-        {
-            if (ModelState.IsValid)
-            {
-                ULoginData data = new ULoginData
-                {
-                    Credentials = login.Credentials,
-                    Password = login.Password,
-                    LogInIP = login.LogInIP,
-                    LogInDateTime = DateTime.Now
-                };
-
-                ULogInResponce resp = _session.UserLoginAction(data);
-                if (resp.Status)
-                {
-                    //Add Cookie
-
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    ModelState.AddModelError("", resp.ActionStatusMsg);
-                    return View();
-                }
-            }
-
-            return View();
-        }
-    }
 }
