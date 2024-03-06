@@ -18,5 +18,25 @@ namespace WebApplication1.Controllers
 
             return View(u);
         }
+
+        public ActionResult Product()
+        {
+            var product = Request.QueryString["p"];
+
+            Model u = new Model();
+            u.Username = "Customer";
+            u.SingleProduct = product;
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Product(string btn)
+
+            {
+            return RedirectToAction("Product","Home",new {@p = btn});
+            }
+
+
     }
 }

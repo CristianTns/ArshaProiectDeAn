@@ -1,4 +1,14 @@
-﻿<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home";
+
+}
+
+@model WebApplication1.Models.Model
+
+
+
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
@@ -69,16 +79,22 @@
                 <div class="row content">
                     <div class="col-lg-6">
                         <p>
-                            <b>At ARSHA</b>, we are dedicated to crafting an extraordinary educational experience tailored to students' unique aspirations. Rooted in passion and unwavering commitment, 
+                            <b>At ARSHA</b>, we are dedicated to crafting an extraordinary educational experience tailored to students' unique aspirations. Rooted in passion and unwavering commitment,
                             ARSHA stands as a beacon of innovation, providing a digital haven designed to inspire and guide students towards their educational zenith.
                         </p>
                         <ul>
-                            <li><i class="ri-check-double-line"></i> <b>Excellence:</b> ARSHA is driven by a commitment to academic brilliance.
-                            We strive to create an environment that not only meets but exceeds the highest educational standards.</li>
-                            <li><i class="ri-check-double-line"></i> <b>Empowerment:</b> Beyond academics, ARSHA aims to empower students with skills, knowledge, and confidence.
-                            We believe in nurturing well-rounded individuals poised for success in both their academic and personal endeavors.</li>
-                            <li><i class="ri-check-double-line"></i> <b>Inclusivity:</b> ARSHA is founded on the principle that education knows no boundaries.
-                            We embrace diversity and foster an inclusive community where every student feels valued, supported, and empowered to thrive.</li>
+                            <li>
+                                <i class="ri-check-double-line"></i> <b>Excellence:</b> ARSHA is driven by a commitment to academic brilliance.
+                                We strive to create an environment that not only meets but exceeds the highest educational standards.
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i> <b>Empowerment:</b> Beyond academics, ARSHA aims to empower students with skills, knowledge, and confidence.
+                                We believe in nurturing well-rounded individuals poised for success in both their academic and personal endeavors.
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i> <b>Inclusivity:</b> ARSHA is founded on the principle that education knows no boundaries.
+                                We embrace diversity and foster an inclusive community where every student feels valued, supported, and empowered to thrive.
+                            </li>
                         </ul>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
@@ -516,8 +532,69 @@
                 </div>
 
             </div>
-        </section><!-- End Pricing Section -->
+        </section>
+
+
+        @using (Ajax.BeginForm("Product", "Home", new AjaxOptions
+        {
+            HttpMethod = "Post",
+            OnSuccess = "succes",
+            OnFailure = "fail",
+            UpdateTargetId = "resultTarget"
+        }))
+        {
+            foreach (var prod in Model.Products)
+            {
+                <tr>
+                    <td>@prod</td>
+                    <td>
+                        @Html.Hidden("btn", prod)
+                        <button style="float: right" class="btn btn-primary btn-xs"
+                                type="submit">
+                            View
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Courses</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @using (Html.BeginForm("Product", "Home", FormMethod.Post, new { autocomplete = "off" }))
+                            {
+
+                                foreach (var prod in Model.Products)
+                                {
+                                    <tr>
+                                        <td> @prod</td>
+                                        <td>
+                                            <button style="float: right" class="btn btn-primary btn-xs" name="btn"
+                                                    type="submit" value="@prod">
+                                                View
+                                            </button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Pricing Section -->
         <!-- ======= Frequently Asked Questions Section ======= -->
+
         <section id="faq" class="faq section-bg">
             <div class="container aos-init" data-aos="fade-up">
 
