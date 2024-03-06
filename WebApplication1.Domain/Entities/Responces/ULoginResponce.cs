@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Domain.Entities.Responces
 {
-    internal class ULoginResponce
+    public class ULoginResponce
     {
+        public string ActionStatusMsg { get; set; }
+        public bool Status { get; set; }
     }
 }
