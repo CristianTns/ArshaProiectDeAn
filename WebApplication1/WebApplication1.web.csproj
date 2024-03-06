@@ -235,6 +235,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplication1.BusinessLogic\WebApplication1.BusinessLogic.csproj">
+      <Project>{21479165-6a46-42f8-b91f-6183b4f80d86}</Project>
+      <Name>WebApplication1.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApplication1.Domain\WebApplication1.Domain.csproj">
+      <Project>{63bfef07-e77a-42e0-8c41-3a177e45a446}</Project>
+      <Name>WebApplication1.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

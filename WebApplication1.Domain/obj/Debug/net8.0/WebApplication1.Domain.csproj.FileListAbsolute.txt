@@ -1,0 +1,16 @@
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Domain.deps.json
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Domain.dll
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Domain.pdb
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Helpers.dll
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\bin\Debug\net8.0\WebApplication1.Helpers.pdb
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.csproj.AssemblyReference.cache
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.AssemblyInfoInputs.cache
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.AssemblyInfo.cs
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.csproj.CoreCompileInputs.cache
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.sourcelink.json
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebAppli.8A9F0644.Up2Date
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.dll
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\refint\WebApplication1.Domain.dll
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\WebApplication1.Domain.pdb
+D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Domain\obj\Debug\net8.0\ref\WebApplication1.Domain.dll
