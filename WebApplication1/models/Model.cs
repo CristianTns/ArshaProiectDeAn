@@ -11,4 +11,4 @@ namespace WebApplication1.Models
         public List<string> Products { get; set; }
         public string SingleProduct { get; internal set; }
     }
-}Us
+}
