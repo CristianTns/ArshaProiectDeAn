@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
+using WebApplication1.BusinessLogic;
+using WebApplication1.BusinessLogic.Interfaces;
+using WebApplication1.Domain.Entities.Responces;
+using WebApplication1.Domain.Entities.User;
 
 namespace WebApplication1.Controllers
 {
@@ -14,37 +19,37 @@ namespace WebApplication1.Controllers
         public LoginController()
         
         {
-            var bl = new BussinesLogic.BussinesLogic();
-            _session = bl.GetSession();
+            var bl = new BussinesLogic();
+            _session = bl.GetSessionBL();
 
           
         }
         
         public ActionResult Index()
         {
-            return view();
+            return View();
 
         }
 
-        [HttpPost]
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Index(UserLogIn data)
+        //{
 
-        public ActionResult Index(UserLogIn data)
-        {
+        //    var uData = new ULoginData
+        //    {
+        //        Credential = data.Credential,
+        //        Password = data.Password,
+        //        Ip = "0.0.0.0",
+        //        LoginTime = DateTime.Now,
 
-            var uData = new ULoginData
-            {
-                Credential = data.Credential,
-                Password = data.Password,
-                IP = "0.0.0.0"
-                LoginTime = DateTime .Now,
-
-            }
-            ULoginResponce resp = _session.UserLoginAction(uData);
+        //    };
+        //    ULoginResponce resp = _session.UserLoginAction(uData);
 
 
-            return view();
+        //    return View();
 
-        } 
+        //} 
 
 
 

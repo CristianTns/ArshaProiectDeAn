@@ -4,3 +4,9 @@ D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\
 D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.AssemblyInfo.cs
 D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.csproj.CoreCompileInputs.cache
 D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.sourcelink.json
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.AssemblyInfo.cs
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.BusinessLogic\obj\Debug\net8.0\WebApplication1.BusinessLogic.sourcelink.json

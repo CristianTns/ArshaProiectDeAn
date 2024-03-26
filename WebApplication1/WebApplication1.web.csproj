@@ -238,13 +238,13 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication1.BusinessLogic\WebApplication1.BusinessLogic.csproj">
-      <Project>{21479165-6a46-42f8-b91f-6183b4f80d86}</Project>
-      <Name>WebApplication1.BusinessLogic</Name>
+    <ProjectReference Include="..\WebApplication.BusinessLogic\WebApplication.BusinessLogic.csproj">
+      <Project>{1a65b013-f83f-4368-b68e-79ca14f75f54}</Project>
+      <Name>WebApplication.BusinessLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebApplication1.Domain\WebApplication1.Domain.csproj">
-      <Project>{63bfef07-e77a-42e0-8c41-3a177e45a446}</Project>
-      <Name>WebApplication1.Domain</Name>
+    <ProjectReference Include="..\WebApplication.Domain\WebApplication.Domain.csproj">
+      <Project>{9f1daedc-d0aa-4ef4-878c-2a089a251ac7}</Project>
+      <Name>WebApplication.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

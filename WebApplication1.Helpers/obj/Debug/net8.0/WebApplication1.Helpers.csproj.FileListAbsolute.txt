@@ -10,3 +10,15 @@ D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApp
 D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\refint\WebApplication1.Helpers.dll
 D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.pdb
 D:\GitHub Repos\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\ref\WebApplication1.Helpers.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\bin\Debug\net8.0\WebApplication1.Helpers.deps.json
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\bin\Debug\net8.0\WebApplication1.Helpers.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\bin\Debug\net8.0\WebApplication1.Helpers.pdb
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.AssemblyInfoInputs.cache
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.AssemblyInfo.cs
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.sourcelink.json
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\refint\WebApplication1.Helpers.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\WebApplication1.Helpers.pdb
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1.Helpers\obj\Debug\net8.0\ref\WebApplication1.Helpers.dll
