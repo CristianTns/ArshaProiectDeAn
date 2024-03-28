@@ -47,6 +47,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,10 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BussinesLogic.cs" />
-    <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="MainBL\SessionBL.cs" />
+    <Compile Include="MainBL\SessionContext.cs" />
+    <Compile Include="MainBL\UserContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

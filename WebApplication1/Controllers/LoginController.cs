@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,6 +8,7 @@ using WebApplication1.BusinessLogic;
 using WebApplication1.BusinessLogic.Interfaces;
 using WebApplication1.Domain.Entities.Responces;
 using WebApplication1.Domain.Entities.User;
+using WebApplication1.Models.User;
 
 namespace WebApplication1.Controllers
 {
@@ -25,39 +27,38 @@ namespace WebApplication1.Controllers
           
         }
         
-        public ActionResult Index()
+        public ActionResult LogIn()
         {
             return View();
 
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Index(UserLogIn data)
-        //{
-
-        //    var uData = new ULoginData
-        //    {
-        //        Credential = data.Credential,
-        //        Password = data.Password,
-        //        Ip = "0.0.0.0",
-        //        LoginTime = DateTime.Now,
-
-        //    };
-        //    ULoginResponce resp = _session.UserLoginAction(uData);
-
-
-        //    return View();
-
-        //} 
-
-
-
-        public ActionResult Register()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult LogIn(UserLogin login)
         {
+            if (ModelState.IsValid)
+            {
+                var data = Mapper.Map<ULoginData>(login);
 
+                data.Ip = Request.UserHostAddress;
+                data.LoginTime = DateTime.Now;
+
+                var userLogin = _session.UserLoginAction(data);
+                if (userLogin.Status)
+                {
+                    HttpCookie cookie = _session.GenCookie(login.Email);
+                    ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", userLogin.ActionStatusMsg);
+                    return View();
+                }
+            }
             return View();
-
         }
     }
 }
