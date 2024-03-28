@@ -65,3 +65,14 @@ C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\System.Web.
 C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\System.Web.WebPages.Razor.xml
 C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\obj\Debug\WebApplication1.web.csproj.CopyComplete
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\AutoMapper.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\EntityFramework.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\WebApplication.Helper.dll
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\WebApplication.BusinessLogic.dll.config
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\WebApplication.Domain.dll.config
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\AutoMapper.xml
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\EntityFramework.xml
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\WebApplication.Helper.pdb
+C:\Users\Ionela\Desktop\MRSTWEB\ArshaProiectDeAn\WebApplication1\bin\WebApplication.Helper.dll.config

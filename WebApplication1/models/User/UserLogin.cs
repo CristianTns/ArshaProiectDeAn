@@ -7,7 +7,7 @@ namespace WebApplication1.Models.User
 {
     public class UserLogin
     {
-        public string Credential {  get; set; }
+        public string Email {  get; set; }
         public string Password { get; set; }
     }
 }
