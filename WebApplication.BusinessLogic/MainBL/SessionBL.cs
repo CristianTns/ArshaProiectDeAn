@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using WebApplication.Domain.Entities.Responces;
 using WebApplication.Domain.Entities.User;
 using WebApplication1.BusinessLogic.Core;
 using WebApplication1.BusinessLogic.Interfaces;
@@ -17,6 +18,10 @@ namespace WebApplication1.BusinessLogic.MainBL
         public ULoginResponce UserLoginAction (ULoginData data)
         {
             return RLogInUpService(data);
+        }
+        public URegisterResponse UserRegisterAction(URegisterData data)
+        {
+            return RRegisterUpService(data);
         }
         public HttpCookie GenCookie(string loginCredential)
         {

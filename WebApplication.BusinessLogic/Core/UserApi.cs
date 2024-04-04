@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using WebApplication.BusinessLogic.MainBL;
+using WebApplication.Domain.Entities.Responces;
 using WebApplication.Domain.Entities.User;
+using WebApplication.Domain.Enums;
 using WebApplication.Helper;
 using WebApplication1.Domain.Entities.Responces;
 using WebApplication1.Domain.Entities.User;
@@ -23,10 +25,10 @@ namespace WebApplication1.BusinessLogic.Core
             var Validate = new EmailAddressAttribute();
             if (Validate.IsValid(data.Email))
             {
-                //var pass =LoginHelper.HashGen(data.Password);
+                var pass =LoginHelper.HashGen(data.Password);
                 using (var db = new UserContext())
                 {
-                    result = db.Users.FirstOrDefault(u => u.Email == data.Email && u.Password == data.Password);
+                    result = db.Users.FirstOrDefault(u => u.Email == data.Email && u.Password == pass);
                 }
 
                 if (result == null)
@@ -120,5 +122,43 @@ namespace WebApplication1.BusinessLogic.Core
 
             return userminimal;
         }
+        internal URegisterResponse RRegisterUpService(URegisterData data)
+        {
+            UserTable existingUser;
+            var validate = new EmailAddressAttribute();
+            if (validate.IsValid(data.Email))
+            {
+                using (var db = new UserContext())
+                {
+                    existingUser = db.Users.FirstOrDefault(u => u.Email == data.Email);
+                }
+
+                if (existingUser != null)
+                {
+                    return new URegisterResponse { Status = false, StatusMsg = "User With Email Already Exists" };
+                }
+
+                var pass = LoginHelper.HashGen(data.Password);
+                var newUser = new UserTable
+                {
+                    Email = data.Email,
+                    Username = data.Username,
+                    Password = pass,
+                    LastIp = data.LoginIp,
+                    LastLogin = data.LoginDateTime,
+                    Level = (URole)0,
+                };
+
+                using (var todo = new UserContext())
+                {
+                    todo.Users.Add(newUser);
+                    todo.SaveChanges();
+                }
+                return new URegisterResponse { Status = true };
+            }
+            else
+                return new URegisterResponse { Status = false };
+        }
     }
 }
+
