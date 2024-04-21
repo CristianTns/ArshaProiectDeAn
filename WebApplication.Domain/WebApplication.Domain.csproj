@@ -52,8 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Responces\ULoginResponce.cs" />
+    <Compile Include="Entities\Responces\URegisterResponse.cs" />
     <Compile Include="Entities\User\Session.cs" />
     <Compile Include="Entities\User\ULoginData.cs" />
+    <Compile Include="Entities\User\URegisterData.cs" />
     <Compile Include="Entities\User\UserMinimal.cs" />
     <Compile Include="Entities\User\UserTable.cs" />
     <Compile Include="Enums\URole.cs" />

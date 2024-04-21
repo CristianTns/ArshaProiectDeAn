@@ -8,6 +8,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using WebApplication.Domain.Entities.User;
 using WebApplication1.App_Start;
 using WebApplication1.Domain.Entities.User;
 using WebApplication1.Models.User;
@@ -29,6 +30,7 @@ namespace WebApplication1
             Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<UserLogin, ULoginData>();
+                cfg.CreateMap<UserRegister, URegisterData>();
             });
         }
     }

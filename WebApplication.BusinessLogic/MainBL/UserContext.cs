@@ -15,6 +15,6 @@ namespace WebApplication.BusinessLogic.MainBL
         {
         }
 
-        public virtual DbSet<UserTable> Users { get; set; }
+        public virtual DbSet<UserTable> Users { get; set; }//creaza tabelul
     }
 }

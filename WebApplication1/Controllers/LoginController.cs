@@ -37,11 +37,11 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult LogIn(UserLogin login)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid)//daca datele introduse sunt corecte
             {
                 var data = Mapper.Map<ULoginData>(login);
 
-                data.Ip = Request.UserHostAddress;
+                data.Ip = Request.UserHostAddress;//ia ip si data cand te loghezi
                 data.LoginTime = DateTime.Now;
 
                 var userLogin = _session.UserLoginAction(data);
@@ -50,7 +50,7 @@ namespace WebApplication1.Controllers
                     HttpCookie cookie = _session.GenCookie(login.Email);
                     ControllerContext.HttpContext.Response.Cookies.Add(cookie);
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");//te duci la pagina principala
                 }
                 else
                 {
