@@ -533,30 +533,6 @@
             </div>
         </section>
 
-
-        @using (Ajax.BeginForm("Product", "Home", new AjaxOptions
-        {
-            HttpMethod = "Post",
-            OnSuccess = "succes",
-            OnFailure = "fail",
-            UpdateTargetId = "resultTarget"
-        }))
-        {
-            foreach (var prod in Model.Products)
-            {
-                <tr>
-                    <td>@prod</td>
-                    <td>
-                        @Html.Hidden("btn", prod)
-                        <button style="float: right" class="btn btn-primary btn-xs"
-                                type="submit">
-                            View
-                        </button>
-                    </td>
-                </tr>
-            }
-        }
-
         <div class="row">
             <div class="col-md-2">
                 <div class="table">
@@ -569,22 +545,15 @@
                         </thead>
                         <tbody>
 
-                            @using (Html.BeginForm("Product", "Home", FormMethod.Post, new { autocomplete = "off" }))
-                            {
-
-                                foreach (var prod in Model.Products)
-                                {
-                                    <tr>
-                                        <td> @prod</td>
-                                        <td>
-                                            <button style="float: right" class="btn btn-primary btn-xs" name="btn"
-                                                    type="submit" value="@prod">
-                                                View
-                                            </button>
-                                        </td>
-                                    </tr>
-                                }
-                            }
+                            <tr>
+                                <td>Produs</td>
+                                <td>
+                                    <button style="float: right" class="btn btn-primary btn-xs" name="btn"
+                                            type="submit" value="Produs">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

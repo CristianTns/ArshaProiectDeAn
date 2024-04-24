@@ -21,7 +21,7 @@
                             <p class="text-muted mb-4 mt-3">Don't have an account? Create your own account, it takes less than a minute</p>
                         </div>
                         @Html.ValidationSummary(true)
-                        @using (Html.BeginForm("Register", "Register", FormMethod.Post, new { @id = "RegisterForm" }))
+                        @using (Html.BeginForm("Index", "Register", FormMethod.Post, new { @id = "RegisterForm" }))
                         {
                             @Html.AntiForgeryToken()
                             <form action="/" novalidate id="RegisterForm" method="post">
@@ -64,16 +64,8 @@
                                     id = "password",
                                     type = "password",
                                     required = true,
-                                    onblur = "verificaParole()",
                                     @class = "form-control"
                                })
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Repeat Password</label>
-                                    <input class="form-control" type="password" required id="repeat-password" placeholder="Repeat your Password" onblur="verificaParole()">
-                                    <div id="error-message-match" class="error-message" style="display:none; color: red;">The passwords do not match!</div>
-                                    <div id="error-message-length" class="error-message" style="display:none; color: red;">The password must be at least 8 characters long!</div>
-                                    <div id="error-message-policy" class="error-message" style="display:none; color: red;">The password must contain at least one uppercase letter, one lowercase letter, one number, and one special character!</div>
                                 </div>
 
                                 <div class="form-group">

@@ -31,6 +31,7 @@ namespace WebApplication1
             {
                 cfg.CreateMap<UserLogin, ULoginData>();
                 cfg.CreateMap<UserRegister, URegisterData>();
+                cfg.CreateMap<UserTable, UserMinimal>();
             });
         }
     }

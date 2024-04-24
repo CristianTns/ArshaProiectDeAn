@@ -71,7 +71,7 @@ namespace WebApplication1.BusinessLogic.Core
                 if (curent != null)
                 {
                     curent.CookieString = apiCookie.Value;
-                    curent.ExpireTime = DateTime.Now.AddMinutes(60);
+                    curent.ExpireTime = DateTime.Now.AddMinutes(5);
                     using (var todo = new SessionContext())
                     {
                         todo.Entry(curent).State = EntityState.Modified;
@@ -84,7 +84,7 @@ namespace WebApplication1.BusinessLogic.Core
                     {
                         Username = loginCredential,
                         CookieString = apiCookie.Value,
-                        ExpireTime = DateTime.Now.AddMinutes(60)
+                        ExpireTime = DateTime.Now.AddMinutes(5)
                     });
                     db.SaveChanges();
                 }
@@ -117,7 +117,6 @@ namespace WebApplication1.BusinessLogic.Core
             }
 
             if (curentUser == null) return null;
-            Mapper.Initialize(cfg => cfg.CreateMap<UserTable, UserMinimal>());
             var userminimal = Mapper.Map<UserMinimal>(curentUser);
 
             return userminimal;

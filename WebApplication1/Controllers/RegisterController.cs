@@ -19,14 +19,14 @@ namespace WebApplication1.Controllers
             var bl = new BussinesLogic();
             _session = bl.GetSessionBL();
         }
-        // GET: Register
         public ActionResult Index()
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(UserRegister register)
+        public ActionResult Index(UserRegister register)
         {
             if (ModelState.IsValid)
             {
